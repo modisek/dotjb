@@ -2684,3 +2684,6 @@ textarea,
 }
 
 /*# sourceMappingURL=pico.css.map */
+input:invalid {
+  border: 2px solid red;
+}
