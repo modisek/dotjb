@@ -964,12 +964,11 @@ button,
 
 button {
   display: block;
-  width: 100%;
+  width: 20%;
   margin-bottom: var(--spacing);
 }
 
 [role=button] {
-  display: inline-block;
   text-decoration: none;
 }
 

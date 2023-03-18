@@ -20,7 +20,7 @@ export default function Home({ result }) {
       <div>
         {result.map((item) => (
           <div key={item.id}>
-            <p key={item.id}>Name: {item.name}</p>
+            <h3> Name: {item.name}</h3>
             <p>Description: {item.description}</p>
             <p>Quantity: {item.quantity}</p>
             <p>Price: {item.price}</p>
@@ -97,6 +97,5 @@ export default function Home({ result }) {
 export async function getServerSideProps() {
   const data = await fetch("http://localhost:3000/api/products");
   const result = await data.json();
-
   return { props: { result } };
 }
